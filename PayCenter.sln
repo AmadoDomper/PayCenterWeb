@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{F8151E33-F72E-4954-80F0-3C656903A725}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{9CD83ADF-7837-491A-8041-FD1511227951}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccesoDatos", "AccesoDatos", "{7E072C03-BF26-4860-B8BA-C977E60C66F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntidadesNegocio", "EntidadesNegocio", "{4EF485A2-9B1D-4BBE-AE08-65AC629FE4EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LogicaNegocio", "LogicaNegocio", "{A5C85BBE-42D8-45D9-8B44-A4F200F8FB8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayCenter.Web", "PayCenter.Web\PayCenter.Web.csproj", "{EED0AF95-BCD1-470A-B21F-DB6DBD0E75A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayCenter.AccesoDatos", "PayCenter.AccesoDatos\PayCenter.AccesoDatos.csproj", "{CAC51AB5-EAAA-4C4E-BD58-ECC0A0574AB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayCenter.EntidadesNegocio", "PayCenter.EntidadesNegocio\PayCenter.EntidadesNegocio.csproj", "{2F056F27-F658-471B-9FC9-DA2B731354A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayCenter.LogicaNegocio", "PayCenter.LogicaNegocio\PayCenter.LogicaNegocio.csproj", "{F14F17D9-0018-4183-8EFD-098632C33715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayCenter.Seguridad", "PayCenter.Seguridad\PayCenter.Seguridad.csproj", "{F79AC462-9AA1-435F-86EA-FDBB082E69DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EED0AF95-BCD1-470A-B21F-DB6DBD0E75A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED0AF95-BCD1-470A-B21F-DB6DBD0E75A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED0AF95-BCD1-470A-B21F-DB6DBD0E75A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED0AF95-BCD1-470A-B21F-DB6DBD0E75A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC51AB5-EAAA-4C4E-BD58-ECC0A0574AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC51AB5-EAAA-4C4E-BD58-ECC0A0574AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC51AB5-EAAA-4C4E-BD58-ECC0A0574AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC51AB5-EAAA-4C4E-BD58-ECC0A0574AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F056F27-F658-471B-9FC9-DA2B731354A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F056F27-F658-471B-9FC9-DA2B731354A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F056F27-F658-471B-9FC9-DA2B731354A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F056F27-F658-471B-9FC9-DA2B731354A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14F17D9-0018-4183-8EFD-098632C33715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14F17D9-0018-4183-8EFD-098632C33715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14F17D9-0018-4183-8EFD-098632C33715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14F17D9-0018-4183-8EFD-098632C33715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79AC462-9AA1-435F-86EA-FDBB082E69DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79AC462-9AA1-435F-86EA-FDBB082E69DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79AC462-9AA1-435F-86EA-FDBB082E69DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79AC462-9AA1-435F-86EA-FDBB082E69DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E072C03-BF26-4860-B8BA-C977E60C66F7} = {9CD83ADF-7837-491A-8041-FD1511227951}
+		{4EF485A2-9B1D-4BBE-AE08-65AC629FE4EC} = {9CD83ADF-7837-491A-8041-FD1511227951}
+		{A5C85BBE-42D8-45D9-8B44-A4F200F8FB8A} = {9CD83ADF-7837-491A-8041-FD1511227951}
+		{EED0AF95-BCD1-470A-B21F-DB6DBD0E75A1} = {F8151E33-F72E-4954-80F0-3C656903A725}
+		{CAC51AB5-EAAA-4C4E-BD58-ECC0A0574AB4} = {7E072C03-BF26-4860-B8BA-C977E60C66F7}
+		{2F056F27-F658-471B-9FC9-DA2B731354A8} = {4EF485A2-9B1D-4BBE-AE08-65AC629FE4EC}
+		{F14F17D9-0018-4183-8EFD-098632C33715} = {A5C85BBE-42D8-45D9-8B44-A4F200F8FB8A}
+		{F79AC462-9AA1-435F-86EA-FDBB082E69DC} = {F8151E33-F72E-4954-80F0-3C656903A725}
+	EndGlobalSection
+EndGlobal
