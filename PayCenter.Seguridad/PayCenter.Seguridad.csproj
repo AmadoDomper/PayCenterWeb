@@ -31,7 +31,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filters\RequiresAuthenticationAttribute.cs" />
+    <Compile Include="Filters\RequiresAuthorizationAttribute.cs" />
+    <Compile Include="PayCenterMembershipProvider.cs" />
+    <Compile Include="PayCenterRoleProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PayCenter.EntidadesNegocio\PayCenter.EntidadesNegocio.csproj">
+      <Project>{2f056f27-f658-471b-9fc9-da2b731354a8}</Project>
+      <Name>PayCenter.EntidadesNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PayCenter.LogicaNegocio\PayCenter.LogicaNegocio.csproj">
+      <Project>{f14f17d9-0018-4183-8efd-098632c33715}</Project>
+      <Name>PayCenter.LogicaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

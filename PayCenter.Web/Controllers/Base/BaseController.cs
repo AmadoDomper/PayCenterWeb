@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Web;
 using System.Web.Mvc;
 using PayCenter.Web.Filters;
 
 namespace PayCenter.Web.Controllers.Base
 {
+
     [NoCacheAttribute]
     public class BaseController : Controller
     {

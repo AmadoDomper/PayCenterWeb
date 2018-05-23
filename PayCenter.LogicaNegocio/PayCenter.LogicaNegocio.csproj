@@ -41,6 +41,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeguridadLN.cs" />
+    <Compile Include="UsuarioLN.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PayCenter.AccesoDatos\PayCenter.AccesoDatos.csproj">
+      <Project>{cac51ab5-eaaa-4c4e-bd58-ecc0a0574ab4}</Project>
+      <Name>PayCenter.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PayCenter.EntidadesNegocio\PayCenter.EntidadesNegocio.csproj">
+      <Project>{2f056f27-f658-471b-9fc9-da2b731354a8}</Project>
+      <Name>PayCenter.EntidadesNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

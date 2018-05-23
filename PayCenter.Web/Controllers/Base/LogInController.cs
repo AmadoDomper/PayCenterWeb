@@ -5,23 +5,24 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
-using PayCenter.Web.Controllers.Base;
 using PayCenter.Web.Models;
+using PayCenter.EntidadesNegocio;
+
 
 namespace PayCenter.Web.Controllers.Base
 {
-	public class LogInController : BaseController
-	{
-        //public IFormsAuthenticationService FormsService { get; set; }
-        //public IMembershipService MembershipService { get; set; }
+    public class LogInController : BaseController
+    {
+        public IFormsAuthenticationService FormsService { get; set; }
+        public IMembershipService MembershipService { get; set; }
 
-        //protected override void Initialize(RequestContext requestContext)
-        //{
-        //    if (FormsService == null) { FormsService = new FormsAuthenticationService(); }
-        //    if (MembershipService == null) { MembershipService = new AccountMembershipService(); }
+        protected override void Initialize(RequestContext requestContext)
+        {
+            if (FormsService == null) { FormsService = new FormsAuthenticationService(); }
+            if (MembershipService == null) { MembershipService = new AccountMembershipService(); }
 
-        //    base.Initialize(requestContext);
-        //}
+            base.Initialize(requestContext);
+        }
 
         [HttpGet]
         public ActionResult LogIn()
@@ -30,19 +31,25 @@ namespace PayCenter.Web.Controllers.Base
         }
 
         [AcceptVerbs(HttpVerbs.Post)]
-        public JsonResult Logear(string UserName, string Password)
+        public ActionResult Logear()
         {
+            string UserName = Request["txtusuario"];
+            string Password = Request["txtpassword"];
+
             //validamos usuario
             bool validar = Membership.Provider.ValidateUser(UserName, Password);
 
             if (validar)
             {
                 //registramos usuario
-                //FormsService.SignIn(UserName, true);
-                return Json(1);
+                FormsService.SignIn(UserName, true);
+                Usuario oUsuario = new Usuario();
+                oUsuario = (Usuario)Session["Datos"];
+
+                return RedirectToAction("Index", "Gestion");
             }
             // Si llegamos a este punto, es que se ha producido un error y volvemos a mostrar el formulario
-            return Json(2);
+            return RedirectToAction("Login", "Login");
         }
 
         [AcceptVerbs(HttpVerbs.Post)]
@@ -60,11 +67,11 @@ namespace PayCenter.Web.Controllers.Base
 
         public ActionResult CerrarSession()
         {
-            //FormsService.SignOut();
+            FormsService.SignOut();
             Roles.DeleteCookie();
             Session.RemoveAll();
             return RedirectToAction("LogIn", "LogIn");
         }
 
-	}
+    }
 }
