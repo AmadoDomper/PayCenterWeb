@@ -117,6 +117,7 @@
     <Compile Include="Controllers\Base\BaseController.cs" />
     <Compile Include="Controllers\Base\LogInController.cs" />
     <Compile Include="Controllers\GestionController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Filters\NoCacheAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -315,13 +316,13 @@
     <Content Include="Views\LogIn\LogIn.cshtml" />
     <Content Include="Views\Gestion\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutGestion.cshtml" />
+    <Content Include="Views\Menu\_Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Helper\" />
     <Folder Include="Views\Config\" />
     <Folder Include="Views\Default\" />
-    <Folder Include="Views\Menu\" />
     <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>
