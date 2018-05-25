@@ -116,6 +116,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\Base\BaseController.cs" />
     <Compile Include="Controllers\Base\LogInController.cs" />
+    <Compile Include="Controllers\ConfigController.cs" />
     <Compile Include="Controllers\GestionController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\Constantes.cs" />
     <Compile Include="Models\UsuarioViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -317,11 +319,10 @@
     <Content Include="Views\Gestion\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutGestion.cshtml" />
     <Content Include="Views\Menu\_Menu.cshtml" />
+    <Content Include="Views\Config\Config.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Helper\" />
-    <Folder Include="Views\Config\" />
     <Folder Include="Views\Default\" />
     <Folder Include="Views\Usuario\" />
   </ItemGroup>
